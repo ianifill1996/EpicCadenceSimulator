@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Scheduling Page</h1>
+        <p>Cadence-Inspired Scheduling Workflow Simulation (September Scheduling Pilot)</p>
+        <p>    Educational Portfolio Project — Not affiliated with Epic Systems</p>
+    </header>
+    <main>
+        <section id="scheduler-controls">
+            <h2>Scheduling Options</h2>
+            <label for="department">Department</label>
+            <select id="department">
+                <option value="">Select Department</option>
+            </select>
+            <label for="provider">Provider</label>
+            <select id="provider">
+                <option value="">Select Provider</option>
+            </select>
+        </section>
+        <section id="calendar-section">
+            <h2>September Provider Availability</h2>
+            <div id="calendar">
+                <p>Select a department and provider to view availability.</p>
+            </div>
+        </section>
+        <section id="appointment-section">
+            <h2>Appointment Details</h2>
+            <form id="appointment-form">
+                <label for="patient-name">Patient Name</label>
+                <input
+                    type="text"
+                    id="patient-name"
+                    name="patient-name"
+                >
+                <label for="chief-complaint">Chief Complaint</label>
+                <textarea
+                    id="chief-complaint"
+                    name="chief-complaint"
+                ></textarea>
+                <label for="referral-status">Referral Status</label>
+                <select id="referral-status">
+                    <option value="">Select Referral Status</option>
+                    <option value="yes">Referral Received</option>
+                    <option value="no">No Referral</option>
+                </select>
+                <label for="medical-priority">Medical Priority</label>
+                <select id="medical-priority">
+                    <option value="">Select Priority</option>
+                    <option value="high">High</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="routine">Routine</option>
+                </select>
+                <label for="appointment-date">Appointment Date</label>
+                <input
+                    type="text"
+                    id="appointment-date"
+                    readonly
+                >
+                <label for="appointment-time">Appointment Time</label>
+                <input
+                    type="text"
+                    id="appointment-time"
+                    readonly
+                >
+                <button type="submit">
+                    Schedule Appointment
+                </button>
+            </form>
+        </section>
+        <section id="message-section">
+            <p id="system-message"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
