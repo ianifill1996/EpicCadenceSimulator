@@ -1,4 +1,7 @@
 Epic Cadence Scheduling & Analytics Project
+
+Live Link: https://ianifill1996.github.io/EpicCadenceSimulator/
+
 Project Overview
 This project is a healthcare scheduling and analytics portfolio project inspired by workflows commonly associated with Epic Cadence.
 The goal of the project is to demonstrate how scheduling operations, system design, data analytics, and business intelligence can work together to support patient access and operational decision-making within a healthcare organization.
